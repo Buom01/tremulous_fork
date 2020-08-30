@@ -1,0 +1,159 @@
+@WINDOW_OPACITY: 0.85;
+
+.generic:not(.generic_sub), .alien:not(.alien_sub), .human:not(.human_sub)
+{
+
+}
+
+.generic, .alien, .human
+{
+  display: inline-block;
+  vertical-align: top;
+  padding: 0.4em;
+  text-align: left;
+  --aug-border: 0.06666666666em;
+  --aug-inset: 0px;
+  --aug-border-opacity: 0.85;
+  --aug-inset-opacity: 0.85;
+}
+
+.generic_sub, .alien_sub, .human_sub
+{
+  height: 100%;
+  width: 100%;
+}
+
+.generic_list, .alien_list, .human_list
+{
+  overflow: hidden;
+  padding: 0;
+  & > ul
+  {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    & > li {
+      margin: 0;
+      padding: 0;
+      & > *
+      {
+        display: block;
+        margin: 0;
+        padding: 0.1em 0.35em;
+        cursor: pointer;
+        --aug-border: 0px;
+        --aug-inset: 0px;
+        --aug-inset-bg: rgb(0.1 * 255, .1 * 255, 0.1 * 255);
+        --aug-inset-opacity: 0;
+        &:focus, &:hover
+        {
+          --aug-inset-opacity: calc(0.5 * 0.55);
+          & a
+          {
+            color: inherit;
+          }
+        }
+      }
+      &.active > *
+      {
+        --aug-inset-opacity: 0.5;
+      }
+    }
+  }
+}
+
+.generic_list > ul > li
+{
+  &.active
+  {
+    color: rgba(1 * 255, .75 * 255, 0 * 255, 1 * 255);
+  }
+}
+.alien_list > ul > li
+{
+  &.active
+  {
+    color: rgba(1 * 255, 0.25 * 255, 0.25 * 255, 1 * 255);
+  }
+}
+.human_list > ul > li
+{
+  &.active
+  {
+    color: rgba(0.4 * 255, 0.7 * 255, 1 * 255, 1 * 255);
+  }
+}
+
+.actions
+{
+  padding-top: 0.4em;
+  text-align: right;
+  & a {
+    padding: 0.2em 0.4em;
+  }
+}
+
+.generic
+{
+  --aug-inset-bg: rgba(0 * 255, 0 * 255, 0 * 255, @WINDOW_OPACITY * 255);
+  --aug-border-bg: rgba(0.5 * 255, 0.5 * 255, 0.5 * 255, @WINDOW_OPACITY / 2 * 255);
+
+  & a:focus, & a:hover
+  {
+    color: rgba(1 * 255, .75 * 255, 0 * 255, 1 * 255);
+  }
+}
+
+.alien
+{
+  --aug-inset-bg: rgba(.05 * 255, 0 * 255, 0 * 255, @WINDOW_OPACITY * 255);
+  --aug-border-bg: rgba(0.6 * 255, 0.5 * 255, 0.5 * 255, @WINDOW_OPACITY / 2 * 255);
+
+  & a:focus, & a:hover
+  {
+    color: rgba(1 * 255, 0.25 * 255, 0.25 * 255, 1 * 255);
+  }
+
+   h1, h2, h3, h4, h5, h6, h7 {
+     font-family: 'Audiowide', cursive;
+     line-height: 1.34em;
+   }
+}
+
+.human
+{
+  --aug-inset-bg: rgba(0 * 255, 0.025 * 255, 0.05 * 255, @WINDOW_OPACITY * 255);
+  --aug-border-bg: rgba(0.5 * 255, 0.55 * 255, 0.6 * 255, @WINDOW_OPACITY / 2 * 255);
+
+  & a:focus, & a:hover
+  {
+    color: rgba(0.4 * 255, 0.7 * 255, 1 * 255, 1 * 255);
+  }
+
+  h1, h2, h3, h4, h5, h6, h7 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    line-height: 1.34em;
+  }
+}
+
+.generic_sub
+{
+}
+
+.alien_sub
+{
+  --aug-inset-bg: rgba(0.1 * 255, 0 * 255, 0 * 255, @WINDOW_OPACITY * 255);
+  --aug-border-bg: rgba(0.6 * 255, 0.45 * 255, 0.45 * 255, @WINDOW_OPACITY / 2 * 255);
+}
+
+.human_sub
+{
+  --aug-inset-bg: rgba(0 * 255, 0.05 * 255, 0.1 * 255, @WINDOW_OPACITY * 255);
+  --aug-border-bg: rgba(0.45 * 255, 0.525 * 255, 0.6 * 255, @WINDOW_OPACITY / 2 * 255);
+}
+
+.big
+{
+  font-size: 42px;
+}

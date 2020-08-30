@@ -1,0 +1,43 @@
+.base
+{
+  position: relative;
+  padding: 1.4em 0.4em 0.4em 0.4em;
+  --aug-border: 0.1em;
+  --aug-border-opacity: 0.85;
+  --aug-inset-opacity: 0.85;
+  --aug-tr-width: calc(100% - 8em);
+  --aug-tl: 0.8em;
+  --aug-tr: 0.8em;
+  --aug-br: 0.8em;
+  & > span
+  {
+    position: absolute;
+    width: 8em;
+    top: 0.1em;
+    left: 0.4em;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #ffffff80;
+  }
+}
+
+.warning
+{
+  .base;
+  --aug-border-bg: rgba(1 * 255, 0.25 * 255, 0.25 * 255, 255);
+  color: rgba(1 * 255, 0.25 * 255, 0.25 * 255, 255);
+}
+
+.information
+{
+  .base;
+  --aug-border-bg: rgba(0.4 * 255, 0.7 * 255, 1 * 255, 1 * 255);
+  color: rgba(0.4 * 255, 0.7 * 255, 1 * 255, 1 * 255);
+}
+
+.alert
+{
+  .base;
+  --aug-border-bg: rgba(1 * 255, .75 * 255, 0 * 255, 1 * 255);
+  color: rgba(1 * 255, .75 * 255, 0 * 255, 1 * 255);
+}

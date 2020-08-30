@@ -1,0 +1,155 @@
+@import "https://fonts.googleapis.com/css2?family=Audiowide&family=Electrolize&family=Orbitron:wght@700&family=Rajdhani:wght@500&family=Teko:wght@300;400&display=swap";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+	width: 100%;
+  overflow-x: hidden; // BREAK STICKY !
+	font-weight: 400;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+
+	background-color: black;
+  // background-image: url(../assets/mainmenu.webp);
+  background-image: url(../assets/credits_splash.webp);
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center center;
+
+  font-family: 'Teko', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.14em;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#app {
+  padding: 56px 20px;
+	min-height: 100%;
+	width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6, h7
+{
+  padding: 0;
+  margin: 0;
+}
+
+h1.title
+{
+  margin-top: 0.25em;
+  margin-bottom: 0.45em;
+}
+
+h2.title, h3.title, h4.title
+{
+  margin-top: 0.2em;
+  margin-bottom: 0.35em;
+  display: flex;
+  align-items: center;
+  &:before, &:after {
+    content: "";
+    flex: 1;
+    margin: 0px 10px;
+    border-bottom: 3px dashed white;
+    // border-bottom: 10px dashed white;
+    // border-image: repeating-linear-gradient(15deg, transparent, transparent 10px, white 10px, white 15px) 1;
+  }
+}
+
+a {
+  color: white;
+}
+
+ul
+{
+  margin-top: 0.2em;
+  margin-bottom: 0.35em;
+}
+
+p
+{
+  margin-bottom: 0.35em;
+}
+
+.bigfont, h1, h2, h3, h4, h5, h6, h7
+{
+  font-family: 'Electrolize', sans-serif;
+  line-height: 1.34em;
+}
+
+.smallfont, textarea, .textblock
+{
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+}
+textarea, .textblock
+{
+  font-size: 0.92em;
+  line-height: 1em;
+}
+
+.textblock
+{
+  overflow-y: auto;
+  height: 100%;
+}
+
+.chat
+{
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+}
+
+.alien
+{
+  font-family: 'Audiowide', cursive;
+  line-height: 1.2em;
+}
+
+.human
+{
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.shadow, h3.title, h4.title
+{
+  text-shadow: 0.05em 0.05em 0.1em black;
+}
+
+.shadow_more, h1.title, h2.title
+{
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+strong
+{
+  font-weight: inherit;
+}
+
+.neon, strong, h1.title
+{
+  color: white;
+  text-shadow: 0px 0px 0.3em cyan;
+}
+
+.emoticon
+{
+  vertical-align: middle;
+  height: 1em;
+  width: 1em;
+}
+
+.emoticon_large
+{
+  width: 2em;
+}

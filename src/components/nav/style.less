@@ -1,0 +1,29 @@
+.common
+{
+  text-shadow: 0px 0px 5px black;
+  & > a
+  {
+    padding: 0.5em;
+  }
+}
+
+.nav
+{
+  /*
+    position: -webkit-sticky;
+    position: sticky;
+    will-change: transform;
+    top: 0.25em;
+    z-index: 999;
+    Disabled as it overlap titles and as it doesn't indicate current position itself
+  */
+  .common;
+  padding: 0 0.25em 0.35em 0.25em;
+}
+
+
+.footer
+{
+  .common;
+  padding: 1em 0.25em 0.35em 0.25em;
+}

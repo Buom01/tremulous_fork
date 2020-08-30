@@ -1,0 +1,11 @@
+.v-grid
+{
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+.v-cell-expand
+{
+  flex-grow : 1;
+  overflow: hidden;
+}

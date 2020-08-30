@@ -1,0 +1,8 @@
+Icons of this folder are licensed
+
+linux.svg : https://fontawesome.com/license
+generic.svg : https://github.com/Templarian/MaterialDesign/blob/master/LICENSE
+launcher.svg : https://github.com/Templarian/MaterialDesign/blob/master/LICENSE
+
+windows.svg : Owned by Microsoft (https://www.microsoft.com/)
+macos.svg : Owned by Apple (https://www.apple.com/)

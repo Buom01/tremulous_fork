@@ -1,0 +1,42 @@
+.base
+{
+  position: relative;
+  --aug-border: 0.1em;
+  --aug-border-opacity: 1;
+  --aug-inset-opacity: 0.5;
+}
+
+.outter
+{
+  .base;
+  height: 3em;
+  padding: 0.3em;
+  --aug-border-bg: rgb(0 * 255, 0.8 * 255, 1 * 255);
+  --aug-tl: 0.65em;
+  --aug-tr: 0.65em;
+  --aug-bl: 0.65em;
+  --aug-br: 0.65em;
+  > span
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.5em;
+  }
+}
+
+.inner
+{
+  .base;
+  height: 2.4em;
+  padding: 0 0.55em;
+  --aug-inset-bg: rgb(0 * 255, 0.8 * 255, 1 * 255);
+  --aug-tl: 0.5em;
+  --aug-tr: 0.5em;
+  --aug-bl: 0.5em;
+  --aug-br: 0.5em;
+}
