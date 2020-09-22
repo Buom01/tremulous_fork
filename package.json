@@ -3,8 +3,8 @@
   "name": "buom01_tremulous",
   "version": "0.0.0",
   "scripts": {
-    "build": "preact build --preload --brotli --gzip",
-    "serve": "sirv build --port 8080 --cors --single --brotli --gzip",
+    "build": "preact build --preload",
+    "serve": "sirv build --port 8080 --cors --single",
     "dev": "preact watch",
     "lint": "eslint src",
     "test": "jest"
