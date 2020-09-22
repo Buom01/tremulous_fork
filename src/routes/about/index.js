@@ -32,9 +32,13 @@ const Home = () => (
 				Fonts licenses are here: <Link>https://github.com/Buom01/tremulous/blob/master/COPYING</Link><br/>
 				(Fonts of this website are the same)
 			</p>
+			<h2 class="title" id="logos">Logos</h2>
+			<p>
+				Some logos are the propriety of their owner. More information on the link encompassing them.
+			</p>
 			<h2 class="title" id="website-source-licenses">Website source-code licenses</h2>
 			<p>
-				None for now
+				None for now, even it it's open-sourced.
 			</p>
 		</Basic>
 

@@ -52,15 +52,19 @@
 {
 	perspective: 1600px;
 	overflow: visible;
+	width: 80%;
+	& > * {
+		max-width: 800px;
+	}
 	&:first-child > * {
 		transform: rotateY(20deg);
-		transform-origin: center center;
+		transform-origin: center left;
 		height: 420px;
 		max-height: 420px;
 	}
 	&:last-child > * {
 		transform: rotateY(-20deg);
-		transform-origin: center center;
+		transform-origin: center right;
 		height: 420px;
 		max-height: 420px;
 	}

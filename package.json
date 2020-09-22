@@ -2,10 +2,9 @@
   "private": true,
   "name": "buom01_tremulous",
   "version": "0.0.0",
-  "license": "MIT",
   "scripts": {
     "build": "preact build --preload --brotli --gzip",
-    "serve": "sirv build --port 8080 --cors --single --brotlu --gzip",
+    "serve": "sirv build --port 8080 --cors --single --brotli --gzip",
     "dev": "preact watch",
     "lint": "eslint src",
     "test": "jest"
@@ -24,9 +23,7 @@
     "enzyme-adapter-preact-pure": "^2.0.0",
     "eslint": "^6.0.1",
     "eslint-config-preact": "^1.1.0",
-    "flashgrid": "^1.1.1",
     "grd": "git+https://github.com/paaragon/grd.git",
-    "image-webpack-loader": "^6.0.0",
     "jest": "^24.9.0",
     "jest-preset-preact": "^1.0.0",
     "less-loader": "^6.2.0",
@@ -53,11 +50,6 @@
     "preset": [
       "default",
       {
-        "autoprefixer": true,
-        "discardUnused": true,
-        "mergeIdents": true,
-        "reduceIdents": true,
-        "zindex": true,
         "calc": false,
         "normalizeWhitespace": false
       }

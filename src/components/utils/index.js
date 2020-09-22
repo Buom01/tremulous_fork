@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import { useState } from 'preact/hooks';
+import style from './style';
 
 const Extern = ({href, class: _class, children}) => (
   <a href={href} class={_class} target="_blank" rel="noopener">{children}</a>
@@ -16,4 +17,8 @@ const NonCritical = ({children}) => {
   return (rendered ? children : null);
 }
 
-export { Extern, Link, NonCritical };
+const NoBreak = ({children}) => (
+  <span class={style.nobreak}>{children}</span>
+)
+
+export { Extern, Link, NonCritical, NoBreak };

@@ -7,6 +7,7 @@ import { Extern } from '../../components/utils';
 import { Generic, GenericListItem } from '../../components/block';
 import blockClasses from '../../components/block/style.less';
 import { Normal } from '../../components/block/layouts';
+import { NoBreak } from '../../components/utils';
 
 const Download = () => {
   const [os, setOs] = useState("linux");
@@ -37,7 +38,9 @@ const Download = () => {
       <p style="text-align:center">
         <br/>
         Currently no downloads are available<br/>
-        Keep tracks on the <Extern href="https://github.com/Buom01/tremulous/releases">GitHub release page</Extern>
+        Keep tracks on the <Extern href="https://github.com/Buom01/tremulous/releases">GitHub release page</Extern> or build it yourself by typing <i>make</i><br/>
+        <br/>
+        Note: You should compile with gcc-9: <NoBreak><i>TOOLS_CC=gcc-9 GCC=gcc-9 CC=cc-9 CXX=g++-9 make</i></NoBreak>
       </p>
       {/*
         os == "Linux" &&

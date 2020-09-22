@@ -3,7 +3,7 @@ import style from './style'
 
 import { Section, Content, Media } from './section';
 
-import { Extern, NonCritical } from '../../components/utils';
+import { Extern, NonCritical, NoBreak } from '../../components/utils';
 import { Nav, Footer } from '../../components/nav';
 import { Generic, Alien, Human } from '../../components/block';
 import { Basic, Simple, Normal } from '../../components/block/layouts';
@@ -52,7 +52,7 @@ const Home = () => (
 			</Media>
 
 			<Content>
-				<Simple Component={Generic} title="New font system" width="100%" height="100%" big>
+				<Simple Component={Generic} title="New fonts system" width="100%" height="100%" big>
 					<ul>
 						<li>With <strong>real shadow</strong></li>
 						<li>With its <strong>real neon effect</strong></li>
@@ -129,8 +129,8 @@ const Home = () => (
 				<Content>
 					<Simple Component={Human} title="Intelligent UI" width="100%" height="100%" big>
 						<p>
-							Is a <strong>critical object needed</strong> in your base ? Do the <strong>defense computer is missing</strong> ?<br/>
-							Or should you simply <strong>upgrade your class</strong> ?<br/>
+							Is a <strong>critical object needed</strong> in your base ?<br/>
+							Should you <strong>upgrade your class</strong> ?<br/>
 							<strong>Intelligent UI will indicate it to you !</strong>
 						</p>
 						<p>
@@ -164,7 +164,7 @@ const Home = () => (
 				<Media>
 					<video width="256" height="256" autoplay loop muted playsinline>
 					  <source src="../../assets/creep.webm" type="video/webm"/>
-						Your browser (or OS) is a deep shit which does't support WEBM libre media format. Sorry.
+						Your browser (or OS) <s>is a deep shit which</s> does't support WEBM libre media format. Sorry.
 					</video>
 				</Media>
 
@@ -175,7 +175,7 @@ const Home = () => (
 							<Extern href="https://youtu.be/u65gsvazk2U" title="Tremulous creep tag">See it in action</Extern><br/>
 						<p>
 						</p>
-							For initial loading performance, only half of frame are used by default.
+							For (initial loading) performances, only half of frames are used by default.
 						</p>
 					</Simple>
 				</Content>
@@ -187,7 +187,7 @@ const Home = () => (
 				<Content>
 					<Simple Component={Alien} title="Smoothed models" width="100%" height="100%" big>
 						<p>
-							Double vertex were finely merged and <strong>aliens models were smoothed</strong>.<br/>
+							Double vertex were merged and <strong>aliens models were finely smoothed</strong>.<br/>
 							Moreover <strong>most shaders were enhanced</strong> as Korx and many mods did.<br/>
 						</p>
 						<p>
@@ -198,6 +198,7 @@ const Home = () => (
 				</Content>
 
 				<Media>
+					<img src="../../assets/md3000.webp" alt="Overmind smoothed model" height="420"/>
 				</Media>
 
 			</Section>
@@ -281,21 +282,13 @@ const Home = () => (
 			<Section>
 
 				<Media>
-					<div style="width:90%">
-						<Progress progress={65}>(1/2)</Progress><br/>
-						<Progress progress={30}/>
-					</div>
 				</Media>
 
 				<Content>
-					<Simple Component={Generic} title="Overall downloads" width="100%" height="100%" big>
+					<Simple Component={Generic} title="Better alien's radar" width="100%" height="100%" big>
 						<p>
-							Nowdays downloads (trough HTTP at least) are so fast.<br/>
-							But knowing how many file were downloaded and the reaming count sound to be a trivial feature.<br/>
-							So I added an overall downloading progress bar with it counter (x-th / total).
-						</p>
-						<p>
-							Moreover, progress bar were redesigned.
+							Alien's radar now also detect teammate and team object.<br/>
+							Also dots showing then are fadded when they go away.
 						</p>
 					</Simple>
 				</Content>
@@ -305,14 +298,40 @@ const Home = () => (
 			<Section>
 
 				<Content>
-					<Simple Component={Generic} title="Syncted from GrangerHub" width="100%" height="100%" big>
-						My fork is based on <Extern href="https://github.com/GrangerHub/tremulous/">GrangerHub's Tremulous fork</Extern>, and <Extern href="https://github.com/GrangerHub/tremulous/pulls/Buom01" title="Buom_01's pull requests on GrangerHub's Tremulous fork">I send back some pull requests</Extern> periodically.
+					<Simple Component={Generic} title="Overall downloads" width="100%" height="100%" big>
+						<p>
+							Nowdays downloads are fast enough.<br/>
+							But knowing files counts sound to be a trivial feature.<br/>
+							So I added an overall downloading progress bar with it counter <NoBreak>(x-th / total)</NoBreak>.
+						</p>
+						<p>
+							Moreover, progress bar were redesigned.
+						</p>
 					</Simple>
 				</Content>
 
 				<Media>
+					<div style="width:90%">
+						<Progress progress={65}>(1/2)</Progress><br/>
+						<Progress progress={30}/>
+					</div>
+				</Media>
+
+			</Section>
+
+			<Section>
+
+				<Media>
 					<Extern href="https://forum.grangerhub.com/"><img src="../../assets/grangerhub.webp" alt="GrangerHub logo"/></Extern>
 				</Media>
+
+				<Content>
+					<Simple Component={Generic} title="Syncted from GrangerHub" width="100%" height="100%" big>
+						<p>
+							My fork is based on <Extern href="https://github.com/GrangerHub/tremulous/">GrangerHub's Tremulous fork</Extern>, and <Extern href="https://github.com/GrangerHub/tremulous/pulls/Buom01" title="Buom_01's pull requests on GrangerHub's Tremulous fork">I send back some pull requests</Extern> periodically.
+						</p>
+					</Simple>
+				</Content>
 
 			</Section>
 
@@ -328,10 +347,12 @@ const Home = () => (
 
 				<Content>
 					<Simple Component={Generic} title="A Launcher" width="100%" height="100%" big>
-						A Launcher allowing which client to use is the next preoccupation.<br/>
-						I would to make it compatible with <Extern href="https://github.com/GrangerHub/Stellar-Prey">GrangerHub's STELLAR PREY™ game</Extern> as <Extern href="https://tremulous.net/">Tremulous 1.1.0</Extern>, conflict free while I want to keep map shared across forks.<br/>
-						<br/>
-						It would be an independant project.
+						<p>
+							A Launcher allowing which client to use is the next preoccupation.<br/>
+							I would to make it compatible with <Extern href="https://github.com/GrangerHub/Stellar-Prey">GrangerHub's STELLAR PREY™ game</Extern> as <Extern href="https://tremulous.net/">Tremulous 1.1.0</Extern>, conflict free while I want to keep map shared across forks.<br/>
+							<br/>
+							It would be an independant project.
+						</p>
 					</Simple>
 				</Content>
 
@@ -352,9 +373,11 @@ const Home = () => (
 
 				<Content>
 					<Simple Component={Generic} title="Better binds" width="100%" height="100%" big>
-						Actually I just added the possibility to got up to 3 keys for a bind, mainly for the Gamepad.<br/>
-						But I want to allow composed bind (eg CTRL+1) with per-team bind allowing to evolve from binds combinaisons properly.
-						There will probably be a new file format for it with a complete UI.
+						<p>
+							Actually I just added the possibility to got up to 3 keys for a bind, mainly for the Gamepad.<br/>
+							But I want to allow composed bind <NoBreak>(e.g. CTRL+1)</NoBreak> with per-team bind allowing to evolve from binds combinaisons properly.
+							There will probably be a new file format for it with a complete UI.
+						</p>
 					</Simple>
 				</Content>
 
@@ -364,20 +387,54 @@ const Home = () => (
 
 				<Content>
 					<Simple Component={Generic} title="LED feedback" width="100%" height="100%" big>
-						What if your keyboard change it color according to the gamestate ?<br/>
-						Currently there are only basic Gamepad feedback.<br/>
-						<br/>
-						Awaiting for a mature library.
+						<p>
+							What if your keyboard change it color according to the gamestate ?<br/>
+							Currently there are only basic Gamepad feedback.<br/>
+							<br/>
+							Awaiting for a mature library: <Extern href="https://gitlab.com/CalcProgrammer1/OpenRGB">OpenRGB</Extern> doesn't have predefined effects and is still buggy with my keyboard.
+						</p>
 					</Simple>
 				</Content>
 
 				<Media>
-
+					<Extern href="https://gitlab.com/CalcProgrammer1/OpenRGB"><img src="../../assets/openrgb.png" alt="OpenRGB logo"/></Extern>
 				</Media>
 
 			</Section>
 
 			<Section>
+
+				<Media>
+					<Extern href="https://www.khronos.org/vulkan/"><img src="../../assets/vulkan2.svg" alt="Vulkan logo" width="300"/></Extern>
+				</Media>
+
+				<Content>
+					<Simple Component={Generic} title="Vulkan renderer" width="100%" height="100%" big>
+						<p>
+							<Extern href="https://kennyalive.com/post/quake3-vulkanized/">Some great work</Extern> were already began, and <Extern href="https://github.com/GrangerHub/tremulous/commit/vulkan">some implantation into Tremulous</Extern> were already too.
+						</p>
+						<p>
+							I could probably help it developement, but currently it's not necessarly the highest priority.<br/>
+							As some UI code need refactor and new GFX, I think that I will wait for Vulkan implantation.
+						</p>
+					</Simple>
+				</Content>
+
+			</Section>
+
+			<Section>
+
+				<Content>
+					<Simple Component={Generic} title="OpenWolf engine" width="100%" height="100%" big>
+						<p>
+							<Extern href="https://www.moddb.com/games/openwolf">OpenWolf engine</Extern> have a lot of enhancements.<br/>
+							The aim is to import most major enhancements into Tremulous to get best of both worlds, but not its OpenGL 3 engine since Vulkan engine should be used instead.
+							<br/>
+							<br/>
+							<Extern href="https://github.com/GrangerHub/Stellar-Prey">Stella Prey</Extern> is based on it.
+						</p>
+					</Simple>
+				</Content>
 
 				<Media>
 					<div class={style.media_container}>
@@ -391,50 +448,41 @@ const Home = () => (
 					</div>
 				</Media>
 
-				<Content>
-					<Simple Component={Generic} title="OpenWolf engine !" width="100%" height="100%" big>
-						<Extern href="https://www.moddb.com/games/openwolf">OpenWolf engine</Extern> is
-
-						The idea is to implant enhancement like OpenGL 3 and others directly into the current fork, to get best of both worlds.<br/>
-						My opinion is that game engine and game itself (like it fonts, models, textures, UI) are separate things.Since I mostly work on the second option, OpenWolf seem for me the best option to update the engine.<br/>
-						Also this engine could make below enhancement already done.<br/>
-						<br/>
-						Similar project:
-						<Extern href="https://github.com/GrangerHub/Stellar-Prey">Stella Prey</Extern>
-					</Simple>
-				</Content>
-
 			</Section>
 
 			<Section>
+
+				<Media>
+
+				</Media>
 
 				<Content>
 					<Simple Component={Generic} title="Support new Medias" width="100%" height="100%" big>
-						Allowing a proper video format and allow it to stream it could offer new modding possibility.<br/>
-						Also, 3D models are in a really old and too basic format. I currently just tweaked it to make it acceptable; I aim to remake really similar model (rigged and with complete texture) while keeping the nature of the game.<br/>
-						<br/>
-						Since OpenWolf engine already offer new possibility the idea is mainly to provide most popular models format like glTF 2.0
+						<p>
+							Allowing a proper video format and allow streaming could offer new modding possibility.<br/>
+							Also, 3D models are in a really old and too basic format. I currently just tweaked it to make it acceptable; I aim to remake really similar model (rigged and with complete texture) while keeping the nature of the game.<br/>
+							<br/>
+							Since OpenWolf engine already offer new possibility the idea is mainly to provide most popular models format like glTF 2.0
+						</p>
 					</Simple>
 				</Content>
-
-				<Media>
-
-				</Media>
 
 			</Section>
 
 			<Section>
 
+				<Content>
+					<Simple Component={Generic} title="Real roots and on models stains" width="100%" height="100%" big>
+						<p>
+							This objective seem the most complicated: getting creep tag branch independancy.<br/>
+							With it I also want to got blood stains and trapper stains on players (and buildable models). It sound complicated to manage mark's tearing.
+						</p>
+					</Simple>
+				</Content>
+
 				<Media>
 
 				</Media>
-
-				<Content>
-					<Simple Component={Generic} title="Real roots and on models stains" width="100%" height="100%" big>
-						This objective seem the most complicated: getting creep tag branch independancy.<br/>
-						With it I also want to got blood stains and trapper stains on players (and buildable models).
-					</Simple>
-				</Content>
 
 			</Section>
 
@@ -444,8 +492,10 @@ const Home = () => (
 
 				<Content>
 					<Simple Component={Generic} title="Very old UI engine" width="100%" height="100%" big>
-						UI's engine is really old. Sometimes some elements don't show right on small screens.<br/>
-						Also custom corner are inspired from Korx's code. I want to redo corners with OpenGL or other.
+						<p>
+							UI's engine is really old. Sometimes some elements don't show right on small screens.<br/>
+							Also custom corner are inspired from Korx's code. I want to redo corners with Vulkan functions.
+						</p>
 					</Simple>
 				</Content>
 
@@ -463,9 +513,11 @@ const Home = () => (
 
 				<Content>
 					<Simple Component={Generic} title="Old servers VM" width="100%" height="100%" big>
-						Some enhancements are also dependant of the gamemod VM: If you play on an unpatched server, some things like Gamepad or animate creep tag will not work properly.<br/>
-						As I send back my modifications to GrangerHub: it's to servers owner to keep their code updated*.<br/>
-						<i>* According to me</i>
+						<p>
+							Some enhancements are also dependant of the gamemod VM: If you play on an unpatched server, some things like Gamepad or animate creep tag will not work properly.<br/>
+							As I send back my modifications to GrangerHub: it's to servers owner to keep their code updated*.<br/>
+							<i>* According to me</i>
+						</p>
 					</Simple>
 				</Content>
 
@@ -475,9 +527,11 @@ const Home = () => (
 
 				<Content>
 					<Simple Component={Generic} title="Particles" width="100%" height="100%" big>
-						Tremulous engine is a fork of Quake III.<br/>
-						I think that particles engine where never reviewed. Also there are a small limit of particles that need to be enlarged properly.<br/>
-						Particles performances should also be verified.
+						<p>
+							Tremulous engine is a fork of Quake III.<br/>
+							I think that particles engine where never reviewed. Also there are a small limit of particles that need to be enlarged properly.<br/>
+							Particles performances should also be verified; they should be managed by the GPU.
+						</p>
 					</Simple>
 				</Content>
 
