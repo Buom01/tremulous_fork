@@ -18,19 +18,19 @@ const Download = () => {
       list={
         <ul>
           <GenericListItem active={os == "linux"} action={()=>{setOs("linux")}}>
-            <img src="../../assets/os/linux.svg" alt="Linux" class="emoticon"/> Linux
+            <img src="assets/os/linux.svg" alt="Linux" class="emoticon"/> Linux
           </GenericListItem>
           <GenericListItem active={os == "windows"} action={()=>{setOs("windows")}}>
-            <img src="../../assets/os/windows.svg" alt="Windows" class="emoticon"/> Windows
+            <img src="assets/os/windows.svg" alt="Windows" class="emoticon"/> Windows
           </GenericListItem>
           <GenericListItem active={os == "macos"} action={()=>{setOs("macos")}} disabled>
-            <img src="../../assets/os/macos.svg" alt="MacOS" class="emoticon"/> MacOS
+            <img src="assets/os/macos.svg" alt="MacOS" class="emoticon"/> MacOS
           </GenericListItem>
           <GenericListItem active={os == "generic"} action={()=>{setOs("generic")}} disabled>
-            <img src="../../assets/os/generic.svg" alt="Generic OS" class="emoticon"/> Generic
+            <img src="assets/os/generic.svg" alt="Generic OS" class="emoticon"/> Generic
           </GenericListItem>
           <GenericListItem active={os == "launcher"} action={()=>{setOs("launcher")}} disabled>
-            <img src="../../assets/os/launcher.svg" alt="Buom_01's launcher" class="emoticon"/> Launcher
+            <img src="assets/os/launcher.svg" alt="Buom_01's launcher" class="emoticon"/> Launcher
           </GenericListItem>
         </ul>
       }

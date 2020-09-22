@@ -13,7 +13,7 @@ const Home = () => (
 
 		<h1 class="title">About Buom_01's Tremulous fork</h1>
 
-		<Nav items={[["/", "Home"]]}/>
+		<Nav items={[["/tremulous_fork/", "Home"]]}/>
 
 		<Information>
 			To get more details about contribution you could <Extern href="https://github.com/Buom01/tremulous/graphs/contributors">see forks tree on GitHub</Extern>

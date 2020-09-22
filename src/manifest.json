@@ -1,19 +1,19 @@
 {
   "name": "Buom_01's Tremulous Fork",
   "short_name": "Bu01's Trem",
-  "start_url": "/",
+  "start_url": "/tremulous_fork/",
   "display": "minimal-ui",
   "orientation": "portrait",
   "background_color": "#66b3ff",
   "theme_color": "#000",
   "icons": [
     {
-      "src": "/assets/icons/android-chrome-192x192.png",
+      "src": "/tremulous_fork/assets/icons/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/assets/icons/android-chrome-512x512.png",
+      "src": "/tremulous_fork/assets/icons/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

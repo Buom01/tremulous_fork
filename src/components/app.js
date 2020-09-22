@@ -14,8 +14,8 @@ export default class App extends Component {
 		return (
 			<div id="app">
 				<Router onChange={this.handleRoute}>
-					<Home path="/" />
-					<About path="/about" />
+					<Home path="/tremulous_fork/" />
+					<About path="/tremulous_fork/about" />
 				</Router>
 			</div>
 		);

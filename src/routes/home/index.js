@@ -146,9 +146,9 @@ const Home = () => (
 								Component={Human} title="Class selection" width="600px" height="300px"
 								list={
 									<ul>
-										<li><span augmented-ui="tl-clip bl-clip exe"><img src="../../assets/emoticons/attention.webp" alt="Attention required" class="emoticon"/> Attention</span></li>
-										<li><span augmented-ui="tl-clip bl-clip exe"><img src="../../assets/emoticons/upgrade.webp" alt="Suggested upgrade" class="emoticon"/> Upgrade</span></li>
-										<li class="disabled"><span augmented-ui="tl-clip bl-clip exe"><img src="../../assets/emoticons/locked.webp" alt="Item is locked" class="emoticon"/> Locked</span></li>
+										<li><span augmented-ui="tl-clip bl-clip exe"><img src="assets/emoticons/attention.webp" alt="Attention required" class="emoticon"/> Attention</span></li>
+										<li><span augmented-ui="tl-clip bl-clip exe"><img src="assets/emoticons/upgrade.webp" alt="Suggested upgrade" class="emoticon"/> Upgrade</span></li>
+										<li class="disabled"><span augmented-ui="tl-clip bl-clip exe"><img src="assets/emoticons/locked.webp" alt="Item is locked" class="emoticon"/> Locked</span></li>
 									</ul>
 								}
 							>
@@ -163,7 +163,7 @@ const Home = () => (
 
 				<Media>
 					<video width="256" height="256" autoplay loop muted playsinline>
-					  <source src="../../assets/creep.webm" type="video/webm"/>
+					  <source src="assets/creep.webm" type="video/webm"/>
 						Your browser (or OS) <s>is a deep shit which</s> does't support WEBM libre media format. Sorry.
 					</video>
 				</Media>
@@ -198,7 +198,7 @@ const Home = () => (
 				</Content>
 
 				<Media>
-					<img src="../../assets/md3000.webp" alt="Overmind smoothed model" height="420"/>
+					<img src="assets/md3000.webp" alt="Overmind smoothed model" height="420"/>
 				</Media>
 
 			</Section>
@@ -210,7 +210,7 @@ const Home = () => (
 
 						<Normal	Component={Alien} title="Class selection" width="600px" height="300px">
 							<div class={style.ui_class_preview}>
-								<img src="../../assets/emoticons/dragoon.webp" alt="Class Dragon"/>
+								<img src="assets/emoticons/dragoon.webp" alt="Class Dragon"/>
 							</div>
 						</Normal>
 
@@ -251,11 +251,11 @@ const Home = () => (
 								<h1>Alien</h1>
 								<div class="v-cell-expand">
 									<Alien sub basic augmented="bl-round exe" class={"v-cell-expand right "+style.status}>
-										<img src="../../assets/emoticons/overmind.webp" alt="Overmind buildable" class="emoticon"/> (<span class="green">750/750</span>)<br/>
-										<img src="../../assets/emoticons/egg.webp" alt="Egg buildable" class="emoticon"/> (<span class="green">2</span>)<br/>
-										<img src="../../assets/emoticons/granger.webp" alt="Granger class" class="emoticon"/> (<span class="grey">0</span>)<br/>
+										<img src="assets/emoticons/overmind.webp" alt="Overmind buildable" class="emoticon"/> (<span class="green">750/750</span>)<br/>
+										<img src="assets/emoticons/egg.webp" alt="Egg buildable" class="emoticon"/> (<span class="green">2</span>)<br/>
+										<img src="assets/emoticons/granger.webp" alt="Granger class" class="emoticon"/> (<span class="grey">0</span>)<br/>
 										<br/>
-										<img src="../../assets/emoticons/booster.webp" alt="Booster buildable" class="emoticon"/> (<span class="grey">0</span>)<br/>
+										<img src="assets/emoticons/booster.webp" alt="Booster buildable" class="emoticon"/> (<span class="grey">0</span>)<br/>
 									</Alien>
 								</div>
 							</Alien>
@@ -263,12 +263,12 @@ const Home = () => (
 								<h1>Human</h1>
 								<div class="v-cell-expand">
 									<Human sub basic augmented="br-clip exe" class={"v-cell-expand "+style.status}>
-										(<span class="green">930/930</span>) <img src="../../assets/emoticons/reactor.webp" alt="Reactor buildable" class="emoticon"/><br/>
-										(<span class="green">2</span>) <img src="../../assets/emoticons/telenode.webp" alt="Telenode buildable" class="emoticon"/><br/>
-										(<span class="grey">0</span>) <img src="../../assets/emoticons/ckit.webp" alt="Construction kit weapon" class="emoticon emoticon_large"/><br/>
-										(<span class="red">0</span>) <img src="../../assets/emoticons/armoury.webp" alt="Armoury buildable" class="emoticon"/><br/>
-										(<span class="green">1</span>) <img src="../../assets/emoticons/medstat.webp" alt="Medical station buildable" class="emoticon"/><br/>
-										(<span class="grey">0</span>) <img src="../../assets/emoticons/defcomp.webp" alt="Defense computer buildable" class="emoticon"/>
+										(<span class="green">930/930</span>) <img src="assets/emoticons/reactor.webp" alt="Reactor buildable" class="emoticon"/><br/>
+										(<span class="green">2</span>) <img src="assets/emoticons/telenode.webp" alt="Telenode buildable" class="emoticon"/><br/>
+										(<span class="grey">0</span>) <img src="assets/emoticons/ckit.webp" alt="Construction kit weapon" class="emoticon emoticon_large"/><br/>
+										(<span class="red">0</span>) <img src="assets/emoticons/armoury.webp" alt="Armoury buildable" class="emoticon"/><br/>
+										(<span class="green">1</span>) <img src="assets/emoticons/medstat.webp" alt="Medical station buildable" class="emoticon"/><br/>
+										(<span class="grey">0</span>) <img src="assets/emoticons/defcomp.webp" alt="Defense computer buildable" class="emoticon"/>
 									</Human>
 								</div>
 							</Human>
@@ -322,7 +322,7 @@ const Home = () => (
 			<Section>
 
 				<Media>
-					<Extern href="https://forum.grangerhub.com/"><img src="../../assets/grangerhub.webp" alt="GrangerHub logo"/></Extern>
+					<Extern href="https://forum.grangerhub.com/"><img src="assets/grangerhub.webp" alt="GrangerHub logo"/></Extern>
 				</Media>
 
 				<Content>
@@ -357,7 +357,7 @@ const Home = () => (
 				</Content>
 
 				<Media>
-					<img src="../../assets/os/launcher.svg" alt="Buom_01's launcher" style="width:40%"/>
+					<img src="assets/os/launcher.svg" alt="Buom_01's launcher" style="width:40%"/>
 				</Media>
 
 			</Section>
@@ -397,7 +397,7 @@ const Home = () => (
 				</Content>
 
 				<Media>
-					<Extern href="https://gitlab.com/CalcProgrammer1/OpenRGB"><img src="../../assets/openrgb.png" alt="OpenRGB logo"/></Extern>
+					<Extern href="https://gitlab.com/CalcProgrammer1/OpenRGB"><img src="assets/openrgb.png" alt="OpenRGB logo"/></Extern>
 				</Media>
 
 			</Section>
@@ -405,7 +405,7 @@ const Home = () => (
 			<Section>
 
 				<Media>
-					<Extern href="https://www.khronos.org/vulkan/"><img src="../../assets/vulkan2.svg" alt="Vulkan logo" width="300"/></Extern>
+					<Extern href="https://www.khronos.org/vulkan/"><img src="assets/vulkan2.svg" alt="Vulkan logo" width="300"/></Extern>
 				</Media>
 
 				<Content>

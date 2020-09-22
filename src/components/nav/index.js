@@ -21,6 +21,6 @@ export const Nav = ({items}) => (
 export const Footer = () => (
   <footer class={style.footer}>
     <Extern href="https://github.com/Buom01/tremulous">GitHub project</Extern>
-    <a href="/about">About</a>
+    <a href="/tremulous_fork/about">About</a>
   </footer>
 )
