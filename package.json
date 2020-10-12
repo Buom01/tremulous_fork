@@ -28,7 +28,7 @@
     "jest-preset-preact": "^1.0.0",
     "less-loader": "^6.2.0",
     "normalize.css": "^8.0.1",
-    "preact-cli": "^3.0.0",
+    "preact-cli": "^3.0.3",
     "react-waypoint": "^9.0.3",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.3",
