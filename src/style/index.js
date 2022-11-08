@@ -1,5 +1,5 @@
 import '../../node_modules/normalize.css/normalize.css';
-import '../../node_modules/grd/src/grd-responsive.css';
+import '../../node_modules/grd/grd.css';
 import '../../node_modules/augmented-ui/augmented.css';
 
 // import './glitch.scss';

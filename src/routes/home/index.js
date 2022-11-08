@@ -17,14 +17,13 @@ const Home = () => (
 
 		<h1 class="title">Buom_01's Tremulous fork</h1>
 
-		<Nav items={["Benefits", "Downloads", "Future enhancements", "Current issues"]}/>
+		<Nav items={["Advantages", "Downloads", "Future enhancements", "Current issues"]}/>
 
 		<Warning>
-			This website is prereleased. Meaning that informations provided here could be in a prototype state.<br/>
-			Also the advertised fork is not ready nor necessarly stable.
+			Currently, the fork is not finished and is in a standby state.
 		</Warning>
 
-		<h2 class="title" id="benefits">Benefits</h2>
+		<h2 class="title" id="advantages">Advantages</h2>
 
 		<Section>
 
@@ -57,7 +56,7 @@ const Home = () => (
 						<li>With <strong>real shadow</strong></li>
 						<li>With its <strong>real neon effect</strong></li>
 						<li>Chat font, for better in-game readability</li>
-						<li>Per team fonts, decoring UI</li>
+						<li>Per team fonts, decorating UI</li>
 						<li>All game counters are now using these per-team fonts</li>
 					</ul>
 				</Simple>
@@ -72,7 +71,7 @@ const Home = () => (
 				<Content>
 					<Simple Component={Generic} title="Complete Gamepad support" width="100%" height="100%" big>
 						<ul>
-							<li>Control characters precisly</li>
+							<li>Control characters precisely</li>
 							<li>Get <strong>game feedback</strong></li>
 							<li><strong>Usable in UI</strong></li>
 							<li>Finely <strong>configurable and bindable</strong></li>
@@ -112,7 +111,7 @@ const Home = () => (
 
 				<Content>
 					<Simple Component={Generic} title="Redesigned UI" width="100%" height="100%" big>
-						<p>Say goodbye to annoying square non-transparent black UI, say hello to fine-tunned custom UI.</p>
+						<p>Say goodbye to annoying square non-transparent black UI, say hello to fine-tuned custom UI.</p>
 						<ul>
 							<li><strong>Blurred background</strong> for readability</li>
 							<li>Per <strong>team fonts</strong></li>
@@ -188,11 +187,11 @@ const Home = () => (
 					<Simple Component={Alien} title="Smoothed models" width="100%" height="100%" big>
 						<p>
 							Double vertex were merged and <strong>aliens models were finely smoothed</strong>.<br/>
-							Moreover <strong>most shaders were enhanced</strong> as Korx and many mods did.<br/>
+							Moreover, <strong>most shaders were enhanced</strong> as Korx and many mods did.<br/>
 						</p>
 						<p>
 							Then back of Granger and Dretch don't look with a discontinuity anymore.<br/>
-							Also the Overmind got a growing animation !
+							The Overmind got a growing animation too !
 						</p>
 					</Simple>
 				</Content>
@@ -224,7 +223,7 @@ const Home = () => (
 						</p>
 						<p>
 							At the same price you can also discover locked items which are now always displayed !<br/>
-							The aim is to faciliate game discovery for newbies.
+							The aim is to facilitate game discovery for newbies.
 						</p>
 					</Simple>
 				</Content>
@@ -237,8 +236,8 @@ const Home = () => (
 					<Simple Component={Generic} title="Integrated Team-Status" width="100%" height="100%" big>
 						<p>
 							Team-Status is <strong>well present on custom servers</strong> and is well appreciated.<br/>
-							So I decided to make it <strong>integrated in the UI</strong> !<br/>
-							Note that it's not the same system than most popular servers.
+							Then I decided to make my own <strong>integration with the UI</strong> !<br/><br/>
+							That's a custom change which is not what is popularly known, and it's currently not backward compatible. 
 						</p>
 					</Simple>
 				</Content>
@@ -288,7 +287,7 @@ const Home = () => (
 					<Simple Component={Generic} title="Better alien's radar" width="100%" height="100%" big>
 						<p>
 							Alien's radar now also detect teammate and team object.<br/>
-							Also dots showing then are fadded when they go away.
+							Dots showing are faded when they go away.
 						</p>
 					</Simple>
 				</Content>
@@ -300,9 +299,9 @@ const Home = () => (
 				<Content>
 					<Simple Component={Generic} title="Overall downloads" width="100%" height="100%" big>
 						<p>
-							Nowdays downloads are fast enough.<br/>
+							Nowadays downloads are fast enough.<br/>
 							But knowing files counts sound to be a trivial feature.<br/>
-							So I added an overall downloading progress bar with it counter <NoBreak>(x-th / total)</NoBreak>.
+							Then I added an overall downloading progress bar with it counter <NoBreak>(x-th / total)</NoBreak>.
 						</p>
 						<p>
 							Moreover, progress bar were redesigned.
@@ -326,7 +325,7 @@ const Home = () => (
 				</Media>
 
 				<Content>
-					<Simple Component={Generic} title="Syncted from GrangerHub" width="100%" height="100%" big>
+					<Simple Component={Generic} title="Synced from GrangerHub" width="100%" height="100%" big>
 						<p>
 							My fork is based on <Extern href="https://github.com/GrangerHub/tremulous/">GrangerHub's Tremulous fork</Extern>, and <Extern href="https://github.com/GrangerHub/tremulous/pulls/Buom01" title="Buom_01's pull requests on GrangerHub's Tremulous fork">I send back some pull requests</Extern> periodically.
 						</p>
@@ -351,7 +350,7 @@ const Home = () => (
 							A Launcher allowing which client to use is the next preoccupation.<br/>
 							I would to make it compatible with <Extern href="https://github.com/GrangerHub/Stellar-Prey">GrangerHub's STELLAR PREY™ game</Extern> as <Extern href="https://tremulous.net/">Tremulous 1.1.0</Extern>, conflict free while I want to keep map shared across forks.<br/>
 							<br/>
-							It would be an independant project.
+							It would be an independent project.
 						</p>
 					</Simple>
 				</Content>
@@ -374,8 +373,8 @@ const Home = () => (
 				<Content>
 					<Simple Component={Generic} title="Better binds" width="100%" height="100%" big>
 						<p>
-							Actually I just added the possibility to got up to 3 keys for a bind, mainly for the Gamepad.<br/>
-							But I want to allow composed bind <NoBreak>(e.g. CTRL+1)</NoBreak> with per-team bind allowing to evolve from binds combinaisons properly.
+							Currently, I just added the possibility to got up to 3 keys for a bind, mainly for the Gamepad.<br/>
+							But I want to add composed bind <NoBreak>(e.g. CTRL+1)</NoBreak> with per-team bind allowing to evolve from binds combinations properly.
 							There will probably be a new file format for it with a complete UI.
 						</p>
 					</Simple>
@@ -388,10 +387,9 @@ const Home = () => (
 				<Content>
 					<Simple Component={Generic} title="LED feedback" width="100%" height="100%" big>
 						<p>
-							What if your keyboard change it color according to the gamestate ?<br/>
-							Currently there are only basic Gamepad feedback.<br/>
+							What if your keyboard change its color according to the game's gamestate ?<br/>
 							<br/>
-							Awaiting for a mature library: <Extern href="https://gitlab.com/CalcProgrammer1/OpenRGB">OpenRGB</Extern> doesn't have predefined effects and is still buggy with my keyboard.
+							It would be done with <Extern href="https://gitlab.com/CalcProgrammer1/OpenRGB">OpenRGB</Extern>.
 						</p>
 					</Simple>
 				</Content>
@@ -411,10 +409,10 @@ const Home = () => (
 				<Content>
 					<Simple Component={Generic} title="Vulkan renderer" width="100%" height="100%" big>
 						<p>
-							<Extern href="https://kennyalive.com/post/quake3-vulkanized/">Some great work</Extern> were already began, and <Extern href="https://github.com/GrangerHub/tremulous/commit/vulkan">some implantation into Tremulous</Extern> were already too.
+							<Extern href="https://kennyalive.com/post/quake3-vulkanized/">Some great work</Extern> were already begun, and <Extern href="https://github.com/GrangerHub/tremulous/commit/vulkan">some implantation into Tremulous</Extern> were already too.
 						</p>
 						<p>
-							I could probably help it developement, but currently it's not necessarly the highest priority.<br/>
+							I could probably help it development, but currently it's not necessarily the highest priority.<br/>
 							As some UI code need refactor and new GFX, I think that I will wait for Vulkan implantation.
 						</p>
 					</Simple>
@@ -427,8 +425,8 @@ const Home = () => (
 				<Content>
 					<Simple Component={Generic} title="OpenWolf engine" width="100%" height="100%" big>
 						<p>
-							<Extern href="https://www.moddb.com/games/openwolf">OpenWolf engine</Extern> have a lot of enhancements.<br/>
-							The aim is to import most major enhancements into Tremulous to get best of both worlds, but not its OpenGL 3 engine since Vulkan engine should be used instead.
+							<Extern href="https://www.moddb.com/games/openwolf">OpenWolf engine</Extern> have tons of enhancements.<br/>
+							The aim is to import most major enhancements into Tremulous to get the best of both worlds.
 							<br/>
 							<br/>
 							<Extern href="https://github.com/GrangerHub/Stellar-Prey">Stella Prey</Extern> is based on it.
@@ -460,9 +458,9 @@ const Home = () => (
 					<Simple Component={Generic} title="Support new Medias" width="100%" height="100%" big>
 						<p>
 							Allowing a proper video format and allow streaming could offer new modding possibility.<br/>
-							Also, 3D models are in a really old and too basic format. I currently just tweaked it to make it acceptable; I aim to remake really similar model (rigged and with complete texture) while keeping the nature of the game.<br/>
+							Moreover, 3D models are in an ancient and too basic format. I currently just tweaked it to make it acceptable; I aim to remake really similar models (rigged and with complete texture) while keeping the nature of the game.<br/>
 							<br/>
-							Since OpenWolf engine already offer new possibility the idea is mainly to provide most popular models format like glTF 2.0
+							Since OpenWolf engine already offer new possibility, the idea is mainly to provide most popular models format like glTF 2.0
 						</p>
 					</Simple>
 				</Content>
@@ -474,8 +472,8 @@ const Home = () => (
 				<Content>
 					<Simple Component={Generic} title="Real roots and on models stains" width="100%" height="100%" big>
 						<p>
-							This objective seem the most complicated: getting creep tag branch independancy.<br/>
-							With it I also want to got blood stains and trapper stains on players (and buildable models). It sound complicated to manage mark's tearing.
+							This objective seems the most complicated: getting creep tag branches independence.<br/>
+							I also want to got blood stains and trapper stains on players (and buildable models). It sounds complicated to manage tearing.
 						</p>
 					</Simple>
 				</Content>
@@ -493,8 +491,8 @@ const Home = () => (
 				<Content>
 					<Simple Component={Generic} title="Very old UI engine" width="100%" height="100%" big>
 						<p>
-							UI's engine is really old. Sometimes some elements don't show right on small screens.<br/>
-							Also custom corner are inspired from Korx's code. I want to redo corners with Vulkan functions.
+							UI's engine is ancient. Sometimes some elements don't show right on small screens.<br/>
+							Another issue is that customs corners are using textures, while I want to totally use graphics functions.
 						</p>
 					</Simple>
 				</Content>
@@ -514,9 +512,8 @@ const Home = () => (
 				<Content>
 					<Simple Component={Generic} title="Old servers VM" width="100%" height="100%" big>
 						<p>
-							Some enhancements are also dependant of the gamemod VM: If you play on an unpatched server, some things like Gamepad or animate creep tag will not work properly.<br/>
-							As I send back my modifications to GrangerHub: it's to servers owner to keep their code updated*.<br/>
-							<i>* According to me</i>
+							Some enhancements are also dependent on the gamemod VM: If you play on an unpatched server, some things like Gamepad or animate creep tag will not work properly.<br/><br/>
+							Most server have they own modifications and most are not based on the same codebase, as the game is ancient too.
 						</p>
 					</Simple>
 				</Content>
@@ -529,8 +526,7 @@ const Home = () => (
 					<Simple Component={Generic} title="Particles" width="100%" height="100%" big>
 						<p>
 							Tremulous engine is a fork of Quake III.<br/>
-							I think that particles engine where never reviewed. Also there are a small limit of particles that need to be enlarged properly.<br/>
-							Particles performances should also be verified; they should be managed by the GPU.
+							Particles are managed by the CPU, while with nowadays technologies it should be transferred to the GPU for acceptable performances.
 						</p>
 					</Simple>
 				</Content>

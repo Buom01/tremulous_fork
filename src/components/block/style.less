@@ -47,7 +47,7 @@
         --aug-inset-opacity: 0;
         &:focus, &:hover
         {
-          --aug-inset-opacity: calc(0.5 * 0.55);
+          --aug-inset-opacity: (0.5 * 0.55);
           & a
           {
             color: inherit;
@@ -96,7 +96,7 @@
 .generic
 {
   --aug-inset-bg: rgba(0 * 255, 0 * 255, 0 * 255, @WINDOW_OPACITY);
-  --aug-border-bg: rgba(0.5 * 255, 0.5 * 255, 0.5 * 255, @WINDOW_OPACITY / 2);
+  --aug-border-bg: rgba(0.5 * 255, 0.5 * 255, 0.5 * 255, (@WINDOW_OPACITY / 2));
 
   & a:focus, & a:hover
   {
@@ -107,7 +107,7 @@
 .alien
 {
   --aug-inset-bg: rgba(.05 * 255, 0 * 255, 0 * 255, @WINDOW_OPACITY);
-  --aug-border-bg: rgba(0.6 * 255, 0.5 * 255, 0.5 * 255, @WINDOW_OPACITY / 2);
+  --aug-border-bg: rgba(0.6 * 255, 0.5 * 255, 0.5 * 255, (@WINDOW_OPACITY / 2));
 
   & a:focus, & a:hover
   {
@@ -123,7 +123,7 @@
 .human
 {
   --aug-inset-bg: rgba(0 * 255, 0.025 * 255, 0.05 * 255, @WINDOW_OPACITY);
-  --aug-border-bg: rgba(0.5 * 255, 0.55 * 255, 0.6 * 255, @WINDOW_OPACITY / 2);
+  --aug-border-bg: rgba(0.5 * 255, 0.55 * 255, 0.6 * 255, (@WINDOW_OPACITY / 2));
 
   & a:focus, & a:hover
   {
@@ -144,13 +144,13 @@
 .alien_sub
 {
   --aug-inset-bg: rgba(0.1 * 255, 0 * 255, 0 * 255, @WINDOW_OPACITY);
-  --aug-border-bg: rgba(0.6 * 255, 0.45 * 255, 0.45 * 255, @WINDOW_OPACITY / 2);
+  --aug-border-bg: rgba(0.6 * 255, 0.45 * 255, 0.45 * 255, (@WINDOW_OPACITY / 2));
 }
 
 .human_sub
 {
   --aug-inset-bg: rgba(0 * 255, 0.05 * 255, 0.1 * 255, @WINDOW_OPACITY);
-  --aug-border-bg: rgba(0.45 * 255, 0.525 * 255, 0.6 * 255, @WINDOW_OPACITY / 2);
+  --aug-border-bg: rgba(0.45 * 255, 0.525 * 255, 0.6 * 255, (@WINDOW_OPACITY / 2));
 }
 
 .big
