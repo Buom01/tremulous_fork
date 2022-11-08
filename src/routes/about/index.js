@@ -16,7 +16,7 @@ const Home = () => (
 		<Nav items={[["/tremulous_fork/", "Home"]]}/>
 
 		<Information>
-			To get more details about contribution you could <Extern href="https://github.com/Buom01/tremulous/graphs/contributors">see forks tree on GitHub</Extern>
+			To get more details about contributions, you could <Extern href="https://github.com/Buom01/tremulous/graphs/contributors">see forks tree on GitHub</Extern>
 		</Information>
 
 		<Basic Component={Generic} width="80%" height="initial" class={style.content}>
